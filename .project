@@ -28,4 +28,26 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>WebContent/img/excel.png</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/xampp/htdocs/laravel/AppEdoc/public/images/excel.png</locationURI>
+		</link>
+		<link>
+			<name>WebContent/img/pdf.png</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/xampp/htdocs/laravel/AppEdoc/public/img/pdf.png</locationURI>
+		</link>
+		<link>
+			<name>WebContent/img/powerpoint.png</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/xampp/htdocs/laravel/AppEdoc/public/img/powerpoint.png</locationURI>
+		</link>
+		<link>
+			<name>WebContent/img/word.png</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/xampp/htdocs/laravel/AppEdoc/public/images/word.png</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
