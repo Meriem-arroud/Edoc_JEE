@@ -24,7 +24,7 @@
           <a class="nav-link" href="#"> <i style="padding-right:10px" class="fas fa-user-tie"></i>Bonjour Super Admin</a>
         </li>
         <li class="nav-item">
-          <a id="logoutBtn" class="nav-link" href="adminLogout"><i style="padding-right:10px" class="fas fa-sign-out-alt"></i>Se déconnecter</a>
+          <a id="logoutBtn" class="nav-link" href="adminLogout"><i style="padding-right:10px" class="fas fa-sign-out-alt"></i>Se dÃ©connecter</a>
         </li>
       </ul>
     </div>

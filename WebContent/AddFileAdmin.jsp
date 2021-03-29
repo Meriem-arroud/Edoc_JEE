@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page import="java.sql.*"%>    
 <!DOCTYPE html>
 <html>
  <head>
@@ -63,7 +64,7 @@
       
       
      </select>
-     <span class="text">Choisir un département</span>
+     <span class="text">Choisir un dÃ©partement</span>
      <span class="line"></span>
      </div>
     </div>
