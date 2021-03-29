@@ -1,11 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
 <!DOCTYPE html>
 <html lang="en">
  <head>
- <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Affichage des documents</title>
   <!-- Style -->
@@ -41,7 +40,7 @@
       <th>Nom du document</th>
       <th>Type</th>
       <th>Taille</th>
-      <th>Département</th>
+      <th>DÃ©partement</th>
       <th>Date </th>
       <th>Voir</th>
       <th></th>
@@ -63,7 +62,7 @@
              <td><img src="<%=rs.getString("type")%>"></td>
              <td><%=rs.getInt("taille")%></td>
              <td><%=rs.getString("departement")%></td>
-             <td><%=rs.getInt("date")%></td>
+             <td><%=rs.getTimestamp("date")%></td>
              <td><a href=""><button class="button" type="button"><i class="fas fa-eye"></i></button></a></td>
              <td><a href="UpdateFile.jsp"><button class="button" type="button"><i class="fas fa-edit"></i></button></a></td>
              <td><a href=""><button class="button" type="button"><i class="fas fa-trash"></i></button></a></td>
@@ -81,7 +80,7 @@
 </section>
 </div>
 <!-- Javascript -->
-
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
