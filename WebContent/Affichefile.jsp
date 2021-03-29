@@ -1,20 +1,11 @@
 <%@ include file="Header.jsp" %>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" session="true"%>
      <%@ page import="com.mysql.jdbc.Connection" %>
     <%@ page import="  java.sql.*" %>
-<!DOCTYPE html>
-<html>
-<head>
-
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
+  <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <div class="section-title">
           <h2>Afficher documents</h2>
         </div>
-
 <div class="container box">
     <div class="panel-body">
     <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
@@ -30,7 +21,7 @@
     <tr>
       <th scope="col">Titre du fichier</th>
       <th scope="col">Type</th>
-      <th scope="col">Département</th>
+      <th scope="col">DÃ©partement</th>
       <th scope="col">Date d'ajout</th>
        <th scope="col">Importer</th>
        <th scope="col">Consulter</th>
@@ -51,13 +42,7 @@ String tab1 = null;
       String pass="";
      cnx=(Connection) DriverManager.getConnection(url,user,pass);
      //System.out.println("connexion bien");
-    
-
-
-
 Statement stmt1 = (Statement)cnx.createStatement();
-
-
 String sql;
 sql = "SELECT * FROM fichiers";
 ResultSet rs1 = stmt1.executeQuery(sql);
@@ -65,7 +50,6 @@ ResultSet rs1 = stmt1.executeQuery(sql);
 %>
 <tr>
 <%
-
 while(rs1.next()){%>
 
 <td scope="row"><%=rs1.getString("name") %></td>

@@ -11,7 +11,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
               <div class="icon"><i class="fas fa-plus-square"></i></div>
-              <h4><a href="addfile">Ajouter document</a></h4>
+              <h4><a href="AddFile.jsp">Ajouter document</a></h4>
               <p>Ajouter un fichier de votre serveur à l'application</p>
             </div>
           </div>
@@ -20,7 +20,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
               <div class="icon"><i class="fas fa-folder-open"></i></div>
-              <h4><a href="getfile">Afficher documents</a></h4>
+              <h4><a href="Affichefile.jsp">Afficher documents</a></h4>
               <p>Affichage des documents du département courant avec la possibilité d'importer et de consulter ces derniers </p>
             </div>
           </div>
