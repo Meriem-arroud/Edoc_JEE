@@ -5,11 +5,14 @@
  <head>
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <!-- Style -->
-   <link type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"> 
-  <link href="css/admin.css" rel="stylesheet">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://kit.fontawesome.com/cbb8fa204a.js" ></script>
+  <link  type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link  type="text/css" href="css/admin.css" rel="stylesheet">
   <link rel="stylesheet"  type="text/css" href="css/designe.css"/>
    <!-- Fontawesome -->
-   <script type="text/javascript" src="https://kit.fontawesome.com/cbb8fa204a.js"></script>
+  
  </head>
  <body>
  <!-- SideBar -->
@@ -40,10 +43,27 @@
     <div class="col">
      <div class="inputBox">
      <select name="depart">
+     <%
+       try{
+    	  Class.forName("com.mysql.jdbc.Driver");
+    	  Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/projet","root","");
+    	  String sql="SELECT * FROM departements";
+    	  Statement stmt=conn.createStatement();
+    	  ResultSet rs=stmt.executeQuery(sql);
+    	  while(rs.next())
+    	  {
+    		  %>
+    		 <option value=""><%=rs.getString("name_departement")%></option>
+    		  <%
+    	  }
+       }catch(Exception ex){
+    	   out.println(ex.getMessage());
+       }
+      %>
       
-      <option value="{{$departe->name_departement}}">{{$departe->name_departement}}</option>
+      
      </select>
-     <span class="text">Choisir un dÃ©partement</span>
+     <span class="text">Choisir un département</span>
      <span class="line"></span>
      </div>
     </div>
@@ -53,7 +73,24 @@
      <div class="inputBox">
      <select name="type">
    
-         <option value="{{$tp->type}}">{{$tp->type}}</option>
+       <%
+       try{
+    	  Class.forName("com.mysql.jdbc.Driver");
+    	  Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/projet","root","");
+    	  String sql="SELECT * FROM types";
+    	  Statement stmt=conn.createStatement();
+    	  ResultSet rs=stmt.executeQuery(sql);
+    	  while(rs.next())
+    	  {
+    		  %>
+    		 <option value=""><%=rs.getString("type")%></option>
+    		  <%
+    	  }
+       }catch(Exception ex){
+    	   out.println(ex.getMessage());
+       }
+      %>
+      
  
     </select>
      <span class="text">Choisir un type</span>
@@ -69,7 +106,7 @@
 </div>
 </section>
 </div>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
  </body>
 
 </html>

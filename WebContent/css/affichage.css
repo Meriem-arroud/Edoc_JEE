@@ -1,0 +1,62 @@
+@charset "ISO-8859-1";
+table {
+	box-shadow: 0 0 20px #e8dfec;
+    display:block;
+    overflow-y: scroll;  
+    width: 1020px;
+    height:500px;
+}
+th,
+td {
+	padding: 18px;
+	color: black;  
+}
+th {
+	text-align: left;
+}
+thead th {
+ background-color: #ff7f41;
+ color: #fff;	
+}
+tbody tr td{
+     position: relative;      
+}
+.button{
+        display: block;
+        margin: auto;
+        color: black;
+        font-size: 17px;
+        cursor: pointer;
+        position: relative;
+        padding: 5px 10px;
+        border: 1px solid #ff7f41;
+        border-radius: 20px;
+}
+.button:hover{
+     background-color: #fff;
+    color: #000; 
+    transform: scale(1.2);
+}
+a:link { 
+ text-decoration:none; 
+}
+#search{
+    height: 35px;   
+    background-color:#f9f9f9;
+    padding-left: 2%;
+    margin-top: 10px;
+    border: 1.5 solid;
+    border-radius:0 20px 20px 0;
+    display: block;
+    margin: auto;
+    color: rgb(0, 0, 0);
+}
+.input-group {
+    width: 50%;;
+    margin: 25px auto;
+}
+.form-control:focus {
+    outline-style: none;
+    box-shadow: none;
+    border-color: lightgray;
+}
