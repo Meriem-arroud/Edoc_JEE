@@ -4,11 +4,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="shortcute icon" type="image/png" href="images/logo.png">
 <link href="bootstrap/dist/css/bootstrap.css"  rel="stylesheet">
 <link href="bootstrap/dist/css/bootstrap.min.css"  rel="stylesheet">
 <link href="css/style.css"  rel="stylesheet">
 <meta charset="ISO-8859-1">
-<title>Login Page</title>
+<title>SMAC-e-DOC</title>
 </head>
 <body>
 <div class="container">

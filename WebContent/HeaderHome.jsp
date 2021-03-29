@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SMAC-e-DOC</title>
-    <link rel="shortcute icon" type="image/png" href="img/logo.png">
+    <link rel="shortcute icon" type="image/png" href="images/logo.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap" media="print" onload="this.media='all'"/>
@@ -36,7 +36,7 @@
           <div id="navbar">
             <ul class="nav pull-right">
             <li class="nav-item"><a class="nav-link" href="Home.jsp">Accueil</a></li>
-              <li class="nav-item"><a class="nav-link" href="logout">Déconnexion</a></li>
+              <li class="nav-item"><a class="nav-link" href="login.jsp">Déconnexion</a></li>
             </ul>
           </div>
         </div>
@@ -76,7 +76,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
               <div class="icon"><i class="fas fa-folder-open"></i></div>
-              <h4><a href="getfile">Afficher documents</a></h4>
+              <h4><a href="Affichefile.jsp">Afficher documents</a></h4>
               <p>Affichage des documents du département courant avec la possibilité d'importer et de consulter ces derniers </p>
             </div>
           </div>

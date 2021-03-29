@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SMAC-e-DOC</title>
-    <link rel="shortcute icon" type="image/png" href="img/logo.png">
+    <link rel="shortcute icon" type="image/png" href="images/logo.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap" media="print" onload="this.media='all'"/>
@@ -56,7 +56,7 @@
    <!-- Navbar -->
  <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-  <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" width="100px" height="100px"/></a>
+  <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" width="100px" height="100px"/></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -69,7 +69,7 @@
           <a class="nav-link" href="#"> <i style="padding-right:10px" class="fas fa-user-tie"></i>Bonjour </a>
         </li>
         <li class="nav-item">
-          <a id="logoutBtn" class="nav-link" href="logout"><i style="padding-right:20px" class="fas fa-sign-out-alt"></i>Se déconnecter</a>
+          <a id="logoutBtn" class="nav-link" href="login.jsp"><i style="padding-right:20px" class="fas fa-sign-out-alt"></i>Se déconnecter</a>
         </li>
       </ul>
     </div>
