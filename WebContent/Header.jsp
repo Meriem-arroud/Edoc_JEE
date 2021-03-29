@@ -66,7 +66,7 @@
           <a class="nav-link" href="Home.jsp"> <i style="padding-right:10px" class="fas fa-home"></i>Accueil</a>
         </li>
         <li style="padding-right:20px" class="nav-item">
-          <a class="nav-link" href="#"> <i style="padding-right:10px" class="fas fa-user-tie"></i>Bonjour {{ session('user')->nom}} {{ session('user')->prenom}}</a>
+          <a class="nav-link" href="#"> <i style="padding-right:10px" class="fas fa-user-tie"></i>Bonjour </a>
         </li>
         <li class="nav-item">
           <a id="logoutBtn" class="nav-link" href="logout"><i style="padding-right:20px" class="fas fa-sign-out-alt"></i>Se déconnecter</a>
