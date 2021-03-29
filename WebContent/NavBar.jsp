@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page import="java.sql.*"%>    
 <!-- Navbar -->
  <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -16,8 +17,24 @@
           <span class="badge rounded-pill badge-notification bg-danger"></span>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <li><a style="color:#ff7f41;font-weight:bold;" class="dropdown-item" href="{{route('markRead')}}">Marquer Tout Comme Lu</a></li>
-    
+          <li><a style="color:#ff7f41;font-weight:bold;" class="dropdown-item" href="#">Marquer Tout Comme Lu</a></li>
+            <%
+       try{
+    	  Class.forName("com.mysql.jdbc.Driver");
+    	  Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/projet","root","");
+    	  String sql="SELECT * FROM notifications";
+    	  Statement stmt=conn.createStatement();
+    	  ResultSet rs=stmt.executeQuery(sql);
+    	  while(rs.next())
+    	  {
+    		  %>
+    		 <li><a class="dropdown-item"><%=rs.getString("contenu")%></a></li>
+    		  <%
+    	  }
+       }catch(Exception ex){
+    	   out.println(ex.getMessage());
+       }
+      %>
           </ul>
         </li>
         <li style="padding-right:20px" class="nav-item">

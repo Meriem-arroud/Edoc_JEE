@@ -1,10 +1,11 @@
-@charset "ISO-8859-1";
+@charset "UTF-8";
 table {
 	box-shadow: 0 0 20px #e8dfec;
     display:block;
     overflow-y: scroll;  
     width: 1020px;
     height:500px;
+    margin:0 auto;
 }
 th,
 td {
@@ -59,4 +60,8 @@ a:link {
     outline-style: none;
     box-shadow: none;
     border-color: lightgray;
+}
+.userTab{
+	width:750px;
+	height:350px;
 }
