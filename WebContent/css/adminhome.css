@@ -1,0 +1,18 @@
+/**** Home ****/
+body{
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+}
+.text{
+   position: absolute;
+   top: 20%;
+   left: 20%;
+}
+.text p{
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 80px;
+    color: #fff;
+} 
