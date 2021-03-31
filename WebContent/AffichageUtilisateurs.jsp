@@ -32,7 +32,7 @@
 
      <div class="input-group flex-nowrap">
         <span class="input-group-text" id="addon-wrapping"><i class="fas fa-search"></i></span>
-        <input type="text" name="search" id="search" class="form-control" placeholder="Chercher un document ...." aria-label="Username" aria-describedby="addon-wrapping">
+        <input type="text" name="search" id="search" class="form-control" placeholder="Chercher un employé ...." aria-label="Username" aria-describedby="addon-wrapping">
      </div>
       <table class="userTab">
       <thead >
